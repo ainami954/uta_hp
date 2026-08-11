@@ -40,7 +40,7 @@ header.nav{position:sticky;top:0;z-index:100;background:rgba(245,237,225,.86);ba
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:99px}
 .brand{font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:.08em;display:flex;align-items:center;gap:10px}
 header.nav .brand{font-size:30px;gap:15px}
-header.nav .brand img.uta-logo{height:69px;content:url("images/logo_large_bg_removed_ps.png")}
+header.nav .brand img.uta-logo{height:69px;content:url("images/logo_large_bg_removed_ps.webp")}
 .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--ember);box-shadow:0 0 12px var(--ember-soft)}
 nav ul{display:flex;gap:45px;list-style:none}
 nav a{color:var(--ink);text-decoration:none;font-size:21px;font-weight:500;letter-spacing:.05em;position:relative;padding:6px 0}
@@ -51,7 +51,7 @@ nav a:hover::after{width:100%}
 @media(max-width:1100px){nav ul{display:none}}
 
 /* hero */
-.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;background:url('images/waterpadi-monochrome-sketch.png') center center/cover no-repeat}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;background:url('images/waterpadi-monochrome-sketch.webp') center center/cover no-repeat}
 .hero-grad{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(36,26,18,.05) 0%,rgba(36,26,18,.0) 45%,rgba(36,26,18,.55) 100%)}
 .hero-content{position:relative;z-index:2;display:flex;justify-content:center;width:100%;padding-top:48px;text-align:center}
 .hero-copy{min-width:0}
@@ -129,9 +129,9 @@ h2.sec{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4.6vw,46px)
 .bean{background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:transform .4s,box-shadow .4s}
 .bean:hover{transform:translateY(-8px);box-shadow:0 24px 50px -24px rgba(36,26,18,.45)}
 .bean .ph{height:200px}
-.lineup-grid .bean .ph{background-image:url("images/utablend.png");background-position:center;background-size:cover;background-repeat:no-repeat}
-.lineup-grid .bean:nth-child(2) .ph{background-image:url("images/icedcoffee.jpg")}
-.lineup-grid .bean:nth-child(3) .ph{background-image:url("images/premium_chocolat.png")}
+.lineup-grid .bean .ph{background-image:url("images/utablend.webp");background-position:center;background-size:cover;background-repeat:no-repeat}
+.lineup-grid .bean:nth-child(2) .ph{background-image:url("images/icedcoffee.webp")}
+.lineup-grid .bean:nth-child(3) .ph{background-image:url("images/premium_chocolat.webp")}
 .lineup-grid .bean .ph::after,.lineup-grid .bean .ph-tag{display:none}
 .bean-body{padding:24px 24px 28px}
 .bean-tag{font-size:11.5px;letter-spacing:.12em;color:var(--ember);font-weight:700}
@@ -190,9 +190,9 @@ h2.sec{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4.6vw,46px)
 .ig-strip{display:flex;gap:10px}
 .ig-strip>a{display:block;width:96px;height:96px;border-radius:6px;overflow:hidden}
 .ig-strip .ph{width:96px;height:96px;border-radius:6px;background-position:center;background-size:cover;background-repeat:no-repeat}
-.ig-strip>a:nth-child(1) .ph{background-image:url("images/summerchildfair.png")}
-.ig-strip>a:nth-child(2) .ph{background-image:url("images/childraisingfair.png")}
-.ig-strip>a:nth-child(3) .ph{background-image:url("images/kitchencar_july.png")}
+.ig-strip>a:nth-child(1) .ph{background-image:url("images/summerchildfair.webp")}
+.ig-strip>a:nth-child(2) .ph{background-image:url("images/childraisingfair.webp")}
+.ig-strip>a:nth-child(3) .ph{background-image:url("images/kitchencar_july.webp")}
 .ig-strip .ph::after,.ig-strip .ph-tag{display:none}
 .ig-strip .ph .ph-tag{padding:5px 8px;font-size:10px}
 @media(max-width:680px){
