@@ -48,7 +48,30 @@ nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;bac
 nav a:hover::after{width:100%}
 .nav-cta{background:var(--ink);color:var(--cream)!important;padding:13.5px 27px;border-radius:3px;font-size:19.5px}
 .nav-cta:hover{background:var(--ember)}
-@media(max-width:1100px){nav ul{display:none}}
+.menu-toggle{display:none;width:48px;height:48px;padding:11px;border:0;background:transparent;color:var(--ink);cursor:pointer;position:relative;z-index:102}
+.menu-toggle span{display:block;width:26px;height:2px;margin:6px auto;background:currentColor;border-radius:2px;transition:transform .3s,opacity .2s}
+@media(max-width:1100px){
+  body.menu-open{overflow:hidden}
+  .menu-toggle{display:block}
+  .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  header.nav .brand{font-size:clamp(18px,4vw,25px)}
+  header.nav .brand img.uta-logo{height:58px}
+  header.nav nav{position:fixed;top:99px;left:0;width:100%;height:calc(100dvh - 99px);padding:24px 28px 40px;background:rgba(245,237,225,.98);overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-12px);pointer-events:none;transition:opacity .25s,transform .25s,visibility .25s}
+  header.nav nav ul{display:flex;flex-direction:column;align-items:stretch;gap:0;max-width:620px;margin:0 auto}
+  header.nav nav li{border-bottom:1px solid var(--line)}
+  header.nav nav a{display:block;padding:17px 4px;font-family:var(--serif);font-size:20px}
+  header.nav nav a::after{display:none}
+  header.nav nav .nav-cta{margin-top:24px;padding:15px 20px;text-align:center;font-family:var(--sans);font-size:16px}
+  body.menu-open header.nav nav{visibility:visible;opacity:1;transform:none;pointer-events:auto}
+}
+@media(max-width:560px){
+  .nav-inner{height:78px}
+  header.nav .brand{font-size:18px;gap:8px}
+  header.nav .brand img.uta-logo{height:50px}
+  header.nav nav{top:78px;height:calc(100dvh - 78px)}
+}
 
 /* hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;background:url('images/waterpadi-monochrome-sketch.webp') center center/cover no-repeat}
